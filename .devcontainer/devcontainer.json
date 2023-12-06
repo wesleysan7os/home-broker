@@ -28,6 +28,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
+				"prisma.prisma",
+				"humao.rest-client",
 				"dbaeumer.vscode-eslint",
 				"esbenp.prettier-vscode",
 				"zxh404.vscode-proto3"
