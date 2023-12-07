@@ -1,6 +1,9 @@
 GET http://localhost:3000
 
 ###
+GET http://localhost:3000/assets
+
+###
 POST http://localhost:3000/assets
 Content-Type: application/json
 
@@ -9,3 +12,34 @@ Content-Type: application/json
   "symbol": "A1",
   "price": 100
 }
+
+###
+GET http://localhost:3000/wallets
+
+###
+POST http://localhost:3000/wallets
+Content-Type: application/json
+
+{
+  "id": "wallet2"
+}
+
+###
+GET http://localhost:3000/wallets/wallet1/assets
+
+###
+POST http://localhost:3000/wallets/wallet1/assets
+Content-Type: application/json
+
+{
+  "asset_id": "asset2",
+  "shares": 10,
+  "Asset": {
+    "id": "asset2",
+    "symbol": "B2",
+    "price": 100
+  }
+}
+
+###
+DELETE http://localhost:3000/wallets/wallet1/assets/657214cf30aae73f1c3c1b7b
